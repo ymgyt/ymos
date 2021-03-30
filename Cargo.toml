@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "ymos"
+]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+# disable unwind on panic.
+panic = "abort"
